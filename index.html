@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
-    <script src="assets/javascript/game.js" >
-    </script>
+
 </head>
 <body>
+
         <!-- this is for the main heading of the page. -->
         <div class="jumbotron">
             <!-- this content is inside the jumbotron and is simply a place to put what you want as the header and the subtext. -->
             <!-- dont forget to center all of this to the page. -->
             <h1> Manchester Orchestra Hangman!! </h1>
-            <p> Click any Button to Start the Game! </p>
+            <p id= "myInput"> Press Enter to start the Game! </p>
         </div>
         <!-- it has the container inside ofit to make it full width of the page without the rounding of the corners. -->
         <!-- put all of the rows and columns for the elements needed in side the container below. -->
@@ -28,7 +28,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-body" id="mediaPanel">
-                            <img src="..." class="img-responsive" alt="hangman-img" id="hangman-animation" style="height: 200px">
+                            <img src="assets/images/simpleMath.jpg" class="img-responsive" alt="hangman-img" id="hangman-animation" style="height: 200px">
                             
                         </div>
                     </div>
@@ -41,14 +41,14 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <h3>Guess the Word!</h3>
-                                    <hr>
-                                    <span id="underScores"> this is where the underscores/word will go! </span>
+                                    <br>
+                                    <span id="underScores"> content </span>
                                 </div>
                             </div>
 
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <h4>Wrong Guesses: <span id="wrong-guess"><small> incorrect guesses array goes here </small></span></h4>
+                                    <h4>Wrong Guesses: <span id="wrong-guess"><small></small></span></h4>
                                     
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h4>Lives: <span id="lives-counter"><small> content </small></span></h4>
+                            <h4>Lives: <span id="lives-counter"><small></small></span></h4>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,6 @@
 
         
         
-    
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
