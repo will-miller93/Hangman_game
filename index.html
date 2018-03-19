@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="assets/javascript/game-not-linked.js"></script>
+    <script src="assets/javascript/game.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,11 +13,15 @@
 <body>
 
         <!-- this is for the main heading of the page. -->
-        <div class="jumbotron">
+        <div class="jumbotron" style="text-align: center">
             <!-- this content is inside the jumbotron and is simply a place to put what you want as the header and the subtext. -->
             <!-- dont forget to center all of this to the page. -->
             <h1> Manchester Orchestra Hangman!! </h1>
-            <p id= "myInput"> Press Enter to start the Game! </p>
+            <p id= "myInput" ><small>Made by: Will Miller</small></p>
+            <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" id="start-button">Start</button>
+                    <button type="button" class="btn btn-default" id="reset-button">Play Again!</button>
+            </div>
         </div>
         <!-- it has the container inside ofit to make it full width of the page without the rounding of the corners. -->
         <!-- put all of the rows and columns for the elements needed in side the container below. -->
@@ -28,7 +32,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-body" id="mediaPanel">
-                            <img src="assets/images/simpleMath.jpg" class="img-responsive" alt="hangman-img" id="image" style="height: 200px">
+                            <img src="assets/images/startimage.jpg" class="img-responsive" alt="hangman-img" id="image" style="height: 200px">
                             <audio src="assets/songs/01 Top Notch.mp3" id="song" ></audio>
                         </div>
                     </div>
