@@ -48,13 +48,14 @@ window.onload = function() {
         song.pause();
         console.log(GameState);
         
+        
     }
-
-    document.onkeyup = function(event) {
-        if (( event.key = "Enter" )&&( GameState = 'inactive' )) {
-            gamePlay();
+        document.onkeyup = function(event) {
+            if ((event.key = 'Enter')&&(GameState = 'inactive')) {
+                gamePlay();
+            }
+            
         }
-    }
     livesCounter.textContent = allowedGuesses;
     winCounter.textContent = wins;
     lossCounter.textContent = losses;
@@ -173,7 +174,7 @@ window.onload = function() {
 
         }
         document.onkeyup = function(event) {
-            if ((event.key = "Enter")&&(GameState === 'paused')) {
+            if ((event.key = "Enter")&&(GameState = 'paused')) {
                 config();
             }
         }
@@ -188,17 +189,5 @@ window.onload = function() {
         }
     } 
 
-    
-    
-    
-
-    // function End() {
-    //     GameState = 'end';
-    //     if (wordBank.length === 0) {
-    //         alert(("Wins: "+ wins + "!")&&("Losses: " + "!"));
-    //         alert("Press the TAB key to play again!");
-    //     }
-        
-    // }
     
 
